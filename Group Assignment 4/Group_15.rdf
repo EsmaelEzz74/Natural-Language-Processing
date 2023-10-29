@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#has_language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#has_language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#write -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#write">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Arabic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Arabic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Biography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Biography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#English -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#English">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#French -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#French">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#German -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#German">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Historical_Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Historical_Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Mystery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Mystery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Romance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Romance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Russian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Russian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Science_Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Science_Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Self-Help -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Self-Help">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#TimePeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#TimePeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#long -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#long">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#old -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#old">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#TimePeriod"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#recent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#recent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#recent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#TimePeriod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#short -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#short">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Agatha_Christie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Agatha_Christie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Crime_and_Punishment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Crime_and_Punishment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Self-Help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fahrenheit_451 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fahrenheit_451">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#short"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fyodor_Dostoevsky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fyodor_Dostoevsky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Les_Misérables -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Les_Misérables">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#French"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Palace_Walk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Palace_Walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Arabic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Sense_And_Sensibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Sense_And_Sensibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Romance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Stephen_King -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Stephen_King">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Adventures_of_Sherlock_Holmes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Adventures_of_Sherlock_Holmes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Mystery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Brothers_Karamazov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Brothers_Karamazov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Russian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Catcher_in_the_Rye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Catcher_in_the_Rye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#English"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Diary_of_a_Young_Girl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Diary_of_a_Young_Girl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Biography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Great_Gatsby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Great_Gatsby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#recent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Little_Prince -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Little_Prince">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Trial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Trial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#German"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#To_Kill_a_Mockingbird -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#To_Kill_a_Mockingbird">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Thriller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#War_and_Peace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#War_and_Peace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#long"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#1984 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#1984">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Historical_Fiction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Gulliver&apos;s_Travels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Gulliver&apos;s_Travels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#old"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Harry_Potter_and_the_Sorcerer&apos;s_Stone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Harry_Potter_and_the_Sorcerer&apos;s_Stone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fantasy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Hitchhiker&apos;s_Guide_To_The_Galaxy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#The_Hitchhiker&apos;s_Guide_To_The_Galaxy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Science_Fiction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Author"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Length"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#TimePeriod"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Biography"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Fantasy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Historical_Fiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Mystery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Romance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Science_Fiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Self-Help"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#Thriller"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#long"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mm/ontologies/2023/6/untitled-ontology-5#short"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
